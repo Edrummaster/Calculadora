@@ -50,6 +50,9 @@ void GridSizer::onCls (wxCommandEvent& WXUNUSED (event)) {
 void GridSizer::onBt1 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("1");
+	string a= display.GetValue();
+	// atoi(para convertir a int)
+	
 }
 
 void GridSizer::onBt2 (wxCommandEvent& WXUNUSED (event)) {
@@ -141,8 +144,10 @@ void GridSizer::onBt0 (wxCommandEvent& WXUNUSED (event)) {
 
 
 void GridSizer::onBtSum (wxCommandEvent& WXUNUSED (event)) {
-	int total = valor1 + valor2;
-	cout << "Resultado suma " << total << endl;
+	string text = (string)display->GetValue();
+	valor1 = atoi(text.c_str());
+	cout<<valor1+valor2<<endl;
+	cout<<valor1<<endl;
 }
 
 
