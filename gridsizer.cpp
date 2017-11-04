@@ -49,11 +49,7 @@ void GridSizer::onCls (wxCommandEvent& WXUNUSED (event)) {
 
 void GridSizer::onBt1 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 1;
-	if (nClicks==2)
-		valor2 = 1;
+	display->AppendText("1");
 }
 
 void GridSizer::onBt2 (wxCommandEvent& WXUNUSED (event)) {
