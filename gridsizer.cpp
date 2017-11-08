@@ -57,88 +57,61 @@ void GridSizer::onBt1 (wxCommandEvent& WXUNUSED (event)) {
 
 void GridSizer::onBt2 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 2;
-	if (nClicks==2)
-		valor2 = 2;
+	display->AppendText("2");
+	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt3 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 3;
-	if (nClicks==2)
-		valor2 = 3;
+	display->AppendText("3");
+	string a= display.GetValue();
 }
 
 void GridSizer::onBt4 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 4;
-	if (nClicks==2)
-		valor2 = 4;
+	display->AppendText("4");
+	string a= display.GetValue();
 }
 
 void GridSizer::onBt5 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 5;
-	if (nClicks==2)
-		valor2 = 5;
+	display->AppendText("5");
+	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt6 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 6;
-	if (nClicks==2)
-		valor2 = 6;
+	display->AppendText("6");
+	string a= display.GetValue();
 }
 
 void GridSizer::onBt7 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 7;
-	if (nClicks==2)
-		valor2 = 7;
+	display->AppendText("7");
+	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt8 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 8;
-	if (nClicks==2)
-		valor2 = 8;
+	display->AppendText("8");
+	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt9 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 9;
-	if (nClicks==2)
-		valor2 = 9;
+	display->AppendText("9");
+	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt0 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
-	cout <<"Hola " << nClicks << endl;
-	if (nClicks==1)
-		valor1 = 0;
-	if (nClicks==2)
-		valor2 = 0;
+	display->AppendText("0");
+	string a= display.GetValue();
 }
 
 
