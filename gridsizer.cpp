@@ -50,7 +50,6 @@ void GridSizer::onCls (wxCommandEvent& WXUNUSED (event)) {
 void GridSizer::onBt1 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("1");
-	string a= display.GetValue();
 	// atoi(para convertir a int)
 	
 }
@@ -58,60 +57,51 @@ void GridSizer::onBt1 (wxCommandEvent& WXUNUSED (event)) {
 void GridSizer::onBt2 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("2");
-	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt3 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("3");
-	string a= display.GetValue();
 }
 
 void GridSizer::onBt4 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("4");
-	string a= display.GetValue();
 }
 
 void GridSizer::onBt5 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("5");
-	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt6 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("6");
-	string a= display.GetValue();
 }
 
 void GridSizer::onBt7 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("7");
-	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt8 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("8");
-	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt9 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("9");
-	string a= display.GetValue();
 }
 
 
 void GridSizer::onBt0 (wxCommandEvent& WXUNUSED (event)) {
 	nClicks += 1;
 	display->AppendText("0");
-	string a= display.GetValue();
 }
 
 
@@ -119,9 +109,12 @@ void GridSizer::onBt0 (wxCommandEvent& WXUNUSED (event)) {
 void GridSizer::onBtSum (wxCommandEvent& WXUNUSED (event)) {
 	string text = (string)display->GetValue();
 	valor1 = atoi(text.c_str());
-	cout<<valor1+valor2<<endl;
-	cout<<valor1<<endl;
-}
+	display->Remove(0,2);
+	text = (string)display->GetValue();
+	valor2 = atoi(text.c_str());
+	int master = valor1 + valor2;
+	cout<<master;
+	}
 
 
 BEGIN_EVENT_TABLE(GridSizer, wxFrame)
